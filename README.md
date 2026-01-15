@@ -34,4 +34,4 @@ To replicate this automation, follow these steps:
 4. Execution:
 - Click Run Once to test the data flow.
 - Verify the results appearing in real-time in your Airtable grid.
-![Workflow Preview](airtable_working.png)
+![Airtable Results](airtable%20working.png)
