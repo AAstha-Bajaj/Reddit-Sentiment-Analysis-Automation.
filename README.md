@@ -14,6 +14,7 @@ Loading: The final analyzed insights are stored in Airtable, providing a clean, 
 Business Impact:
 Operational Efficiency: Converted hours of manual labor into a near-instant automated process.
 Data-Driven Insights: Enables faster, more informed product decisions based on real-time user feedback and sentiment trends.
+![Workflow Preview](working.png)
 
 How to Run This Project
 To replicate this automation, follow these steps:
@@ -22,17 +23,15 @@ To replicate this automation, follow these steps:
 - Generate a Personal Access Token (PAT) in the Airtable Developer Hub.
 - Scopes required: data.records:read, data.records:write, and schema.bases:read.
 - Access: Grant access to your specific workspace or "All Bases".
-
 2. Make.com Configuration:
 - Import the provided .json blueprint file into a new Make.com scenario.
 - Connect your Reddit API via the HTTP module to fetch JSON data.
 - Link your Google Gemini AI account and use the "Generate a Response" module.
 - Prompt used: "Analyze the sentiment of this text and respond with only one word: Positive, Negative, or Neutral."
-
 3. Data Mapping:
 - Map the selftext from the Reddit Iterator to the Airtable "Post Content" field.
 - Map the Gemini AI text output to the Airtable "Sentiment" field.
-
 4. Execution:
 - Click Run Once to test the data flow.
 - Verify the results appearing in real-time in your Airtable grid.
+![Workflow Preview](airtable working.png)
